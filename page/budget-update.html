@@ -1,0 +1,44 @@
+<section class="container">
+  <div class="card">
+      <div class="card-header">
+          <h3 class="well" style="text-align:center;">Atualizar Orçamento</h3>
+      </div>
+      <div class="card-body">
+          <form class="form-horizontal" method="post">
+            <input type="text" class="hide" id="id" style="opacity: 0;height: 0;margin: 0;padding: 0;">
+              <div class="mb-3">
+                  <label class="form-label" for="nomeCliente">Nome do Cliente:</label>
+                  <input size="50" maxlength="50" class="form-control" id="nomeCliente" name="nomeCliente" type="text" placeholder="Nome do Cliente"
+                      value="">
+                  <span class="text-danger"></span>
+              </div>
+              <div class="mb-3">
+                  <label class="form-label" for="nomeVendedor">Nome do Vendedor:</label>
+                  <input size="50" maxlength="50" class="form-control" name="nomeVendedor" id="nomeVendedor" type="text" placeholder="Nome do Vendedor"
+                              value="">
+                  <span class="text-danger"></span>
+              </div>
+              <div class="mb-3">
+                  <label class="form-label" for="telefone">Telefone:</label>
+                  <input size="35" maxlength="11" class="form-control" name="telefone" id="telefone" type="number" placeholder="Telefone"
+                          value="">
+                  <span class="text-danger"></span>
+              </div>   
+              <div class="mb-3">
+                  <label class="form-label" for="descricao">Descriçao do Serviço:</label>
+                  <textarea maxlength="500" style="resize:none; height:200px" class="form-control" name="descricao" id="descricao" type="text" placeholder="descricao"></textarea>
+              </div>
+              <div class="mb-3">
+                  <label class="form-label" for="precoOrcamento">Valor: R$ </label>
+                  <input size="35"  name="precoOrcamento" id="precoOrcamento" type="number" placeholder="Valor"
+                          value="">
+                  <span class="text-danger"></span>
+              </div>
+              <div class="form-actions">
+                  <div type="submit" onclick="budgetUpdate()" class="btn btn-success">Atualizar</div>
+                  <div type="btn" onclick="goToList()" class="btn btn-secondary my-md-1">Voltar</div>
+              </div>
+          </form>
+      </div>
+  </div>
+</section>

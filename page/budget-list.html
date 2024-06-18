@@ -1,0 +1,34 @@
+
+    
+
+<section class="container">
+    <div class="card-header">
+        <h3 class="well" style="text-align:center;">Orçamentos Cadastrados</h3>
+    </div>
+    <div class="card-body">  
+        <div class="d-flex justify-content-between py-md-3">
+            <form class="form-horizontal" id="form-pesquisa" action="index.php" method="GET">
+                <label for="pesquisa" id="pesquisa-label"></label>
+            </form>
+            <div class="div-btn-add">
+                <div onclick="newBudget()" class="btn btn-success float-right">Novo Orçamento</div>
+            </div>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Hora</th>
+                    <th scope="col">Vendedor</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Valor</th>
+                </tr>
+            </thead>
+            <tbody id="budget-list">
+            </tbody>
+        </table>
+    </div>
+</section>
