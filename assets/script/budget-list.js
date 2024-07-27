@@ -6,7 +6,7 @@ const renderBudgetList = (()=>{
 
   budgetList.forEach(budget => {
     htmlRetorno +=`
-    <tr>
+    <tr class="column">
       <th scope="row">${budget.id}</th>
       <td>${budget.nomeCliente} </td>
       <td>${budget.data} </td>
@@ -15,7 +15,7 @@ const renderBudgetList = (()=>{
       <td>${budget.telefone}</td>
       <td>${budget.descricao}</td>
       <td>${budget.precoOrcamento}</td>
-      <td> 
+      <td class="d-flex align-items-center gap-1 flex-lg-row flex-column"> 
           <div class="btn btn-primary" onclick="requisitar('budget-info.html', ${budget.id})">Info</div>
           <div class="btn btn-warning mx-md-1" onclick="requisitar('budget-update.html', ${budget.id})">Atualizar</div>
           <div class="btn btn-danger" onclick="requisitar('func-budget-delete', ${budget.id})">Excluir</div>
